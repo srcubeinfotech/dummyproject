@@ -1,0 +1,673 @@
+{$Content}
+// Off Canvas Navigation
+nav.off-canvas-navigation
+  header Navigation
+  .main-navigation.navigation-off-canvas
+// end Off Canvas Navigation
+// Page Content
+#page-content
+  // Hero Image
+  section.hero-image.search-filter-middle.height-500
+    .inner
+      .container
+        h1 Find Place For Fun and Eat
+        .search-bar.horizontal
+          form.main-search.border-less-inputs.background-dark.narrow(role='form', method='post', action='?')
+            .input-row
+              .form-group
+                label(for='keyword') Keyword
+                input#keyword.form-control(type='text', placeholder='Enter Keyword')
+              // /.form-group
+              .form-group
+                label(for='model') Place Type
+                select#model(name='model', multiple='', title='Any', data-live-search='true')
+                  option(value='1') Restaurant
+                  option(value='2') Vegetarian
+                  option(value='3') Bar
+                  option(value='4') Night Life
+                  option(value='5') Breakfast
+                  option(value='6') Fast Food
+                  option(value='7') Steak & Grill
+              // /.form-group
+              .form-group
+                label(for='location') Location
+                .input-group.location
+                  input#location.form-control(type='text', placeholder='Enter Location')
+              // /.form-group
+              .form-group
+                button.btn.btn-default(type='submit')
+                  i.fa.fa-search
+              // /.form-group
+          // /.main-search
+        // /.search-bar
+    .background
+      img(src='assets/img/restaurant-bg.jpg', alt='')
+  // end Hero Image
+  // Featured
+  section#featured.block.equal-height
+    .container
+      header
+        h2 Featured
+      .row
+        .col-md-3.col-sm-3
+          .item
+            .image
+              .quick-view
+                i.fa.fa-eye
+                span Quick View
+              a(href='item-detail.html')
+                .overlay
+                  .inner
+                    .content
+                      h4 Description
+                      p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                .item-specific
+                  span(title='Bedrooms')
+                    img(src='assets/img/bedrooms.png', alt='')
+                    | 2
+                  span(title='Bathrooms')
+                    img(src='assets/img/bathrooms.png', alt='')
+                    | 2
+                  span(title='Area')
+                    img(src='assets/img/area.png', alt='')
+                    | 240m
+                    sup 2
+                  span(title='Garages')
+                    img(src='assets/img/garages.png', alt='')
+                    | 1
+                .icon
+                  i.fa.fa-thumbs-up
+                img(src='assets/img/items/1.jpg', alt='')
+            .wrapper
+              a(href='item-detail.html')
+                h3 Steak House Restaurant
+              figure 63 Birch Street
+              .info
+                .type
+                  i
+                    img(src='assets/icons/restaurants-bars/restaurants/restaurant.png', alt='')
+                  span Restaurant
+                .rating(data-rating='4')
+          // /.item
+        // /.col-sm-4
+        .col-md-3.col-sm-3
+          .item
+            .image
+              .quick-view
+                i.fa.fa-eye
+                span Quick View
+              a(href='item-detail.html')
+                .overlay
+                  .inner
+                    .content
+                      h4 Description
+                      p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                img(src='assets/img/items/2.jpg', alt='')
+            .wrapper
+              a(href='item-detail.html')
+                h3 Benny’s Cafeteria
+              figure 63 Birch Street
+              .info
+                .type
+                  i
+                    img(src='assets/icons/restaurants-bars/restaurants/cafetaria.png', alt='')
+                  span Cafeteria
+                .rating(data-rating='4')
+          // /.item
+        // /.col-sm-4
+        .col-md-3.col-sm-3
+          .item
+            .image
+              .quick-view
+                i.fa.fa-eye
+                span Quick View
+              a(href='item-detail.html')
+                .overlay
+                  .inner
+                    .content
+                      h4 Description
+                      p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                .item-specific
+                  span Daily menu from: $6
+                img(src='assets/img/items/restaurant/9.jpg', alt='')
+            .wrapper
+              a(href='item-detail.html')
+                h3 Big Bamboo
+              figure 4662 Bruce Street
+              .info
+                .type
+                  i
+                    img(src='assets/icons/restaurants-bars/restaurants/japanese-food.png', alt='')
+                  span Sushi
+                .rating(data-rating='3')
+          // /.item
+        // /.col-sm-4
+        .col-md-3.col-sm-3
+          .item
+            .image
+              .quick-view
+                i.fa.fa-eye
+                span Quick View
+              a(href='item-detail.html')
+                .overlay
+                  .inner
+                    .content
+                      h4 Description
+                      p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                .item-specific
+                  span Daily menu from: $6
+                img(src='assets/img/items/restaurant/10.jpg', alt='')
+            .wrapper
+              a(href='item-detail.html')
+                h3 Sushi Wooshi Bar
+              figure 357 Trainer Avenue
+              .info
+                .type
+                  i
+                    img(src='assets/icons/restaurants-bars/restaurants/fishchips.png', alt='')
+                  span Sushi Bar
+                .rating(data-rating='3')
+          // /.item
+        // /.col-sm-4
+      // /.row
+    // /.container
+    .background.opacity-5
+      img(src='assets/img/restaurants-bg2.jpg', alt='')
+  // end Featured
+  // Popular
+  section#popular.block.background-color-white
+    .container
+      header
+        h2 Popular
+      .owl-carousel.wide.carousel
+        .slide
+          .inner
+            .image
+              .item-specific
+                .inner
+                  .content
+                    dl
+                      dt Bedrooms
+                      dd 2
+                      dt Bathrooms
+                      dd 2
+                      dt Area
+                      dd
+                        | 240m
+                        sup 2
+                      dt Garages
+                      dd 1
+                      dt Build Year
+                      dd 1990
+              img(src='assets/img/items/restaurant/8.jpg')
+            .wrapper
+              a(href='item-detail.html')
+                h3 Magma Bar and Grill
+              figure
+                i.fa.fa-map-marker
+                span 970 Chapel Street, Rosenberg, TX 77471
+              .info
+                .rating(data-rating='4')
+                  aside.reviews 6 reviews
+                .type
+                  i
+                    img(src='assets/icons/restaurants-bars/restaurants/restaurant.png')
+                  span Restaurant
+              // /.info
+              p
+                | Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa, viverra interdum eros ut,
+                | imperdiet pellentesque mauris. Proin sit amet scelerisque risus. Donec semper semper erat ut mollis.
+                | Curabitur suscipit, justo eu dignissim lacinia, ante sapien pharetra dui...
+              a.read-more.icon(href='item-detail.html') Read More
+            // /.wrapper
+          // /.inner
+        // /.slide
+        .slide
+          .inner
+            .image
+              .item-specific
+                .inner
+                  .content
+                    dl
+                      dt Bedrooms
+                      dd 2
+                      dt Bathrooms
+                      dd 2
+                      dt Area
+                      dd
+                        | 240m
+                        sup 2
+                      dt Garages
+                      dd 1
+                      dt Build Year
+                      dd 1990
+              img(src='assets/img/items/restaurant/9.jpg')
+            .wrapper
+              a(href='item-detail.html')
+                h3 Saguaro Tavern
+              figure
+                i.fa.fa-map-marker
+                span 2476 Whispering Pines Circle
+              .info
+                .rating(data-rating='4')
+                  aside.reviews 6 reviews
+                .type
+                  i
+                    img(src='assets/icons/restaurants-bars/restaurants/restaurant.png')
+                  span Restaurant
+              // /.info
+              p
+                | Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa, viverra interdum eros ut,
+                | imperdiet pellentesque mauris. Proin sit amet scelerisque risus. Donec semper semper erat ut mollis.
+                | Curabitur suscipit, justo eu dignissim lacinia, ante sapien pharetra dui...
+              a.read-more.icon(href='item-detail.html') Read More
+            // /.wrapper
+          // /.inner
+        // /.slide
+      // /.owl-carousel
+    // /.container
+  // end Popular
+  // Why Us
+  section#why-us.block
+    .container
+      header
+        h2 Why Us?
+      .row
+        .col-md-4.col-sm-4
+          .feature-box
+            i.fa.fa-thumbs-up
+            .description
+              h3 Lorem ipsum dolor 
+              p
+                | Praesent tempor a erat in iaculis. Phasellus vitae libero libero. Vestibulum ante
+                | ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          // /.feature-box
+        // /.col-md-4
+        .col-md-4.col-sm-4
+          .feature-box
+            i.fa.fa-folder
+            .description
+              h3 Etiam vehicula felis a ipsum
+              p
+                | Pellentesque nisl quam, aliquet sed velit eu, varius condimentum nunc.
+                | Nunc vulputate turpis ut erat egestas, vitae rutrum sapien varius.
+          // /.feature-box
+        // /.col-md-4
+        .col-md-4.col-sm-4
+          .feature-box
+            i.fa.fa-money
+            .description
+              h3 Donec dolor justo, volutpat 
+              p
+                | Maecenas quis ipsum lectus. Fusce molestie, metus ut consequat pulvinar,
+                | ipsum quam condimentum leo, sit amet auctor lacus nulla at felis.
+          // /.feature-box
+        // /.col-md-4
+  // end Why Us
+  hr
+  // Listing
+  section#listing.block
+    .container
+      .row
+        .col-md-9.col-sm-9
+          section.equal-height
+            header
+              h2 Today Popular
+            .row
+              .col-md-4.col-sm-4
+                .item
+                  .image
+                    .quick-view
+                      i.fa.fa-eye
+                      span Quick View
+                    a(href='item-detail.html')
+                      .overlay
+                        .inner
+                          .content
+                            h4 Description
+                            p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                      img(src='assets/img/items/restaurant/11.jpg', alt='')
+                  .wrapper
+                    a(href='item-detail.html')
+                      h3 Max Five Lounge
+                    figure 63 Birch Street
+                    .info
+                      .type
+                        i
+                          img(src='assets/icons/restaurants-bars/restaurants/restaurant.png', alt='')
+                        span Restaurant
+                      .rating(data-rating='4')
+                // /.item
+              // /.col-sm-4
+              .col-md-4.col-sm-4
+                .item
+                  .image
+                    .quick-view
+                      i.fa.fa-eye
+                      span Quick View
+                    a(href='item-detail.html')
+                      .overlay
+                        .inner
+                          .content
+                            h4 Description
+                            p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                      img(src='assets/img/items/restaurant/4.jpg', alt='')
+                  .wrapper
+                    a(href='item-detail.html')
+                      h3 Magma Bar & Grill
+                    figure 63 Birch Street
+                    .info
+                      .type
+                        i
+                          img(src='assets/icons/restaurants-bars/restaurants/restaurant_steakhouse.png', alt='')
+                        span Steak House
+                      .rating(data-rating='4')
+                // /.item
+              // /.col-sm-4
+              .col-md-4.col-sm-4
+                .item
+                  .image
+                    .quick-view
+                      i.fa.fa-eye
+                      span Quick View
+                    a(href='item-detail.html')
+                      .overlay
+                        .inner
+                          .content
+                            h4 Description
+                            p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                      .item-specific
+                        span Menu from: $9.00
+                      img(src='assets/img/items/restaurant/8.jpg', alt='')
+                  .wrapper
+                    a(href='item-detail.html')
+                      h3 Guild Trattoria
+                    figure 4662 Bruce Street
+                    .info
+                      .type
+                        i
+                          img(src='assets/icons/restaurants-bars/restaurants/barbecue.png', alt='')
+                        span BBQ Restaurant
+                      .rating(data-rating='3')
+                // /.item
+              // /.col-sm-4
+              .col-md-4.col-sm-4
+                .item
+                  .image
+                    .quick-view
+                      i.fa.fa-eye
+                      span Quick View
+                    a(href='item-detail.html')
+                      .overlay
+                        .inner
+                          .content
+                            h4 Description
+                            p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                      img(src='assets/img/items/restaurant/12.jpg', alt='')
+                  .wrapper
+                    a(href='item-detail.html')
+                      h3 Sushi Wooshi Bar
+                    figure 357 Trainer Avenue
+                    .info
+                      .type
+                        i
+                          img(src='assets/icons/restaurants-bars/restaurants/fishchips.png', alt='')
+                        span Sushi Bar
+                      .rating(data-rating='3')
+                // /.item
+              // /.col-sm-4
+              .col-md-4.col-sm-4
+                .item
+                  .image
+                    .quick-view
+                      i.fa.fa-eye
+                      span Quick View
+                    a(href='item-detail.html')
+                      .overlay
+                        .inner
+                          .content
+                            h4 Description
+                            p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                      img(src='assets/img/items/4.jpg', alt='')
+                  .wrapper
+                    a(href='item-detail.html')
+                      h3 Max Five Lounge
+                    figure 63 Birch Street
+                    .info
+                      .type
+                        i
+                          img(src='assets/icons/restaurants-bars/restaurants/restaurant.png', alt='')
+                        span Restaurant
+                      .rating(data-rating='4')
+                // /.item
+              // /.col-sm-4
+              .col-md-4.col-sm-4
+                .item
+                  .image
+                    #10.quick-view
+                      i.fa.fa-eye
+                      span Quick View
+                    a(href='item-detail.html')
+                      .overlay
+                        .inner
+                          .content
+                            h4 Description
+                            p Curabitur odio nibh, luctus non pulvinar a, ultricies ac diam. Donec neque massa
+                      img(src='assets/img/items/6.jpg', alt='')
+                  .wrapper
+                    a(href='item-detail.html')
+                      h3 Magma Bar & Grill
+                    figure 63 Birch Street
+                    .info
+                      .type
+                        i
+                          img(src='assets/icons/restaurants-bars/restaurants/restaurant_steakhouse.png', alt='')
+                        span Steak House
+                      .rating(data-rating='4')
+                // /.item
+              // /.col-sm-4
+            // /.row
+          // /.equal-height
+          // Categories
+          section#categories.block
+            header
+              h2 Categories
+            ul.categories
+              li
+                a(href='#') Arts & Humanities
+                ul.sub-category
+                  li
+                    a(href='#') Photography
+                  li
+                    a(href='#') History
+                  li
+                    a(href='#') Literature
+                // /.sub-category
+              li
+                a(href='#') Business & Economy
+                ul.sub-category
+                  li
+                    a(href='#') B2B
+                  li
+                    a(href='#') Finance
+                  li
+                    a(href='#') Shopping
+                  li
+                    a(href='#') Jobs
+                // /.sub-category
+              li
+                a(href='#') Computer & Internet
+                ul.sub-category
+                  li
+                    a(href='#') Hardware
+                  li
+                    a(href='#') Software
+                  li
+                    a(href='#') Web
+                  li
+                    a(href='#') Games
+                // /.sub-category
+              li
+                a(href='#') Education
+                ul.sub-category
+                  li
+                    a(href='#') Colleges
+                  li
+                    a(href='#') K-12
+                  li
+                    a(href='#') Distance Learning
+                // /.sub-category
+              li
+                a(href='#') Entertainment
+                ul.sub-category
+                  li
+                    a(href='#') Movies
+                  li
+                    a(href='#') TV Shows
+                  li
+                    a(href='#') Music
+                  li
+                    a(href='#') Humor
+                // /.sub-category
+              li
+                a(href='#') Government
+                ul.sub-category
+                  li
+                    a(href='#') Elections
+                  li
+                    a(href='#') Military
+                  li
+                    a(href='#') Law
+                  li
+                    a(href='#') Taxes
+                // /.sub-category
+              li
+                a(href='') Health
+                ul.sub-category
+                  li
+                    a(href='#') Disease
+                  li
+                    a(href='#') Drugs
+                  li
+                    a(href='#') Fitness
+                  li
+                    a(href='#') Nutrition
+                // /.sub-category
+              li
+                a(href='#') News & Media
+                ul.sub-category
+                  li
+                    a(href='#') Newspapers
+                  li
+                    a(href='#') Radio
+                  li
+                    a(href='#') Weather
+                  li
+                    a(href='#') Blogs
+                // /.sub-category
+              li
+                a(href='#') Recreation & Sports
+                ul.sub-category
+                  li
+                    a(href='#') Sports
+                  li
+                    a(href='#') Travel
+                  li
+                    a(href='#') Autos
+                  li
+                    a(href='#') Outdoors
+                // /.sub-category
+            // /.categories
+          // end Categories
+        .col-md-3.col-sm-3
+          aside#sidebar
+            section
+              header
+                h2 Text Widget
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus turpis, rutrum
+                | at dictum ac, mollis sed turpis. Integer commodo condimentum quam sit amet pellentesque.
+                | In convallis orci sit amet dictum ultricies. Donec iaculis libero sed euismod blandit
+            section
+              header
+                h2 Events
+              .form-group
+                select.framed(name='events')
+                  option(value='') Select Your City
+                  option(value='1') London
+                  option(value='2') New York
+                  option(value='3') Barcelona
+                  option(value='4') Moscow
+                  option(value='5') Tokyo
+            section
+              header
+                h2 New Places
+              a.item-horizontal.small(href='item-detail.html')
+                h3 Cash Cow Restaurante
+                figure 63 Birch Street
+                .wrapper
+                  .image
+                    img(src='assets/img/items/1.jpg', alt='')
+                  .info
+                    .type
+                      i
+                        img(src='assets/icons/restaurants-bars/restaurants/restaurant.png', alt='')
+                      span Restaurant
+                    .rating(data-rating='4')
+              // /.item-horizontal small
+              a.item-horizontal.small(href='item-detail.html')
+                h3 Blue Chilli
+                figure 2476 Whispering Pines Circle
+                .wrapper
+                  .image
+                    img(src='assets/img/items/2.jpg', alt='')
+                  .info
+                    .type
+                      i
+                        img(src='assets/icons/restaurants-bars/restaurants/restaurant.png', alt='')
+                      span Restaurant
+                    .rating(data-rating='3')
+              // /.item-horizontal small
+              a.item-horizontal.small(href='item-detail.html')
+                h3 Eddie’s Fast Food
+                figure 4365 Bruce Street
+                .wrapper
+                  .image
+                    img(src='assets/img/items/3.jpg', alt='')
+                  .info
+                    .type
+                      i
+                        img(src='assets/icons/restaurants-bars/restaurants/restaurant.png', alt='')
+                      span Restaurant
+                    .rating(data-rating='5')
+              // /.item-horizontal small
+          // /#sidebar
+        // /.col-md-3
+      // /.row
+    // /.block
+  // end Listing
+  hr
+  // Partners
+  section#partners.block
+    .container
+      header
+        h2 Partners
+      .logos
+        .logo
+          a(href='#')
+            img(src='assets/img/logo-partner-01.png', alt='')
+        .logo
+          a(href='#')
+            img(src='assets/img/logo-partner-02.png', alt='')
+        .logo
+          a(href='#')
+            img(src='assets/img/logo-partner-03.png', alt='')
+        .logo
+          a(href='#')
+            img(src='assets/img/logo-partner-04.png', alt='')
+        .logo
+          a(href='#')
+            img(src='assets/img/logo-partner-05.png', alt='')
+    // /.container
+  // end Partners
+// end Page Content

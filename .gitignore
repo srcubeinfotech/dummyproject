@@ -1,0 +1,12 @@
+*.zip
+config-default.php
+*.orig
+ftpsync.settings
+upload/*
+composer.lock
+composer.phar
+*.sublime-workspace
+/*.sql
+*.orig
+vendor/*
+theme/

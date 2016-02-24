@@ -1,0 +1,52 @@
+#page-canvas
+  // Off Canvas Navigation
+  nav.off-canvas-navigation
+    header Navigation
+    .main-navigation.navigation-off-canvas
+  // end Off Canvas Navigation
+  // Sub Header
+  section.sub-header
+    #redefine-search-form.search-bar.horizontal.collapse
+    // /.search-bar
+    .breadcrumb-wrapper
+      .container
+        .redefine-search
+          a.inner(href='#redefine-search-form', data-toggle='collapse', aria-expanded='false', aria-controls='redefine-search-form')
+            span.icon
+            span Redefine Search
+        ol.breadcrumb
+          li
+            a(href='index-directory.html')
+              i.fa.fa-home
+          li
+            a(href='#') Page
+          li.active Detail
+        // /.breadcrumb
+      // /.container
+    // /.breadcrumb-wrapper
+  // end Sub Header
+  // Page Content
+  #page-content
+    section.container
+      .block
+        .row
+          .col-md-4.col-sm-6.col-md-offset-4.col-sm-offset-3
+            header
+              h1.page-title Sign In
+            hr
+            {signin}
+            form#form-sign-in-account(role='form', method='post', action='?')
+              .form-group
+                label(for='form-sign-in-email') Email:
+                input#form-sign-in-email.form-control(type='email', name='form-sign-in-email', required='')
+              // /.form-group
+              .form-group
+                label(for='form-sign-in-password') Password:
+                input#form-sign-in-password.form-control(type='password', name='form-sign-in-password', required='')
+              // /.form-group
+              .form-group.clearfix
+                button#account-submit.btn.pull-right.btn-default(type='submit') Sign In
+              // /.form-group
+              {/signin}
+    // /.block
+  // end Page Content
